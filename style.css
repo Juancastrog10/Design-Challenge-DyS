@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 300vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4152A5;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #FFB137;
+}
+
+.banner {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./Recursos/outside.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #4152A5;
+}
+
+.banner h1 {
+    color: #FFB137;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la tabla de puntaje */
+#tablaPuntaje {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #F36747;
+}
+
+#tablaPuntaje th, #tablaPuntaje td {
+    border: 1px solid #F36747;
+    padding: 12px;
+}
+
+#tablaPuntaje th {
+    background-color: #4152A5;
+    text-align: left;
+    color: white;
+}
+
+/* Reglas de medios para hacer el CSS responsive */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 5px 0;
+    }
+
+    .navbar button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    #tablaPuntaje {
+        width: 90%;
+    }
+}

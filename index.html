@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Barra de navegación -->
+     <div class="navbar" id="navbar">
+        <button onclick="scrollToElement('inicio')">Inicio</button>
+        <button onclick="scrollToElement('tablaPuntaje')">Tabla de Puntaje</button>
+    </div>
+
+    <!-- Banner grande -->
+    <div class="banner">
+        <h1>Design Challenge</h1>
+    </div>
+    <table id="tablaPuntaje">
+        <thead>
+            <tr>
+                <th>Completado</th>
+                <th>Principio Ético</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" class="item" value="10"></td>
+                <td>Accesibilidad y usabilidad para todos.</td>
+                <td>Diseñar productos y servicios que sean accesibles y fáciles de usar para personas de todas las habilidades y condiciones.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item" value="10"></td>
+                <td>Sostenibilidad ambiental.</td>
+                <td>Considerar el impacto ambiental de los productos y servicios, buscando reducir la huella ecológica y promover prácticas sostenibles.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item" value="10"></td>
+                <td>Privacidad de los datos.</td>
+                <td>Proteger la privacidad y la seguridad de la información personal de los usuarios, garantizando el cumplimiento de las regulaciones de privacidad.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item" value="10"></td>
+                <td>Diversidad e inclusión.</td>
+                <td>Promover la diversidad y la inclusión en el diseño, representando y atendiendo a una amplia gama de identidades, culturas y perspectivas.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item" value="10"></td>
+                <td>Transparencia en la toma de decisiones algorítmicas.</td>
+                <td>Garantizar la transparencia y la equidad en los algoritmos utilizados en el diseño, evitando sesgos y discriminación.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item" value="10"></td>
+                <td>Responsabilidad social corporativa.</td>
+                <td>Integrar consideraciones éticas y sociales en todas las etapas del desarrollo y la implementación de productos y servicios.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item" value="10"></td>
+                <td>Honestidad y veracidad en la comunicación.</td>
+                <td>Comunicar de manera clara, honesta y veraz sobre las características, beneficios y riesgos asociados con los productos y servicios.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item" value="10"></td>
+                <td>Seguridad y protección del usuario.</td>
+                <td>Priorizar la seguridad y la protección del usuario en el diseño, minimizando los riesgos de seguridad y garantizando la confiabilidad del producto o servicio.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item" value="10"></td>
+                <td>Respeto a los derechos humanos.</td>
+                <td>Respetar y promover los derechos humanos en todas las actividades de diseño, evitando contribuir a prácticas que violen los derechos fundamentales.</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="item" value="10"></td>
+                <td>Equidad y justicia social.</td>
+                <td>Diseñar productos y servicios que promuevan la equidad y la justicia social, abordando las desigualdades y promoviendo la igualdad de oportunidades.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="calcularPuntaje()">Calcular Puntaje</button>
+
+    <div id="puntajeTotal"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
